@@ -1,0 +1,47 @@
+{
+  "name": "ionic-audio-player",
+  "version": "1.0.0",
+  "description": "Audio player using ionic and cordova plugins. Synchronous single track playing across app with singleton audio player. Audio track templates with progress bar, seeking, and timer. ",
+  "main": "dist/audio-player/audio-player.module.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmdejno/ionic-audio.git"
+  },
+  "keywords": [
+    "ionic",
+    "typescript",
+    "node",
+    "audio",
+    "player"
+  ],
+  "author": "Jeremy Dejno (initial credit to Ariel Faur for ionic-audio)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmdejno/ionic-audio/issues"
+  },
+  "dependencies": {
+  "@angular/common": "2.1.1",
+  "@angular/compiler": "2.1.1",
+  "@angular/compiler-cli": "2.1.1",
+  "@angular/core": "2.1.1",
+  "@angular/forms": "2.1.1",
+  "@angular/http": "2.1.1",
+  "@angular/platform-browser": "2.1.1",
+  "@angular/platform-browser-dynamic": "2.1.1",
+  "@angular/platform-server": "2.1.1",
+  "@ionic/storage": "1.1.6",
+  "ionic-angular": "2.0.0-rc.2",
+  "ionic-native": "2.2.3",
+  "ionicons": "3.0.0",
+  "rxjs": "5.0.0-beta.12",
+  "zone.js": "0.6.21"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "0.0.41",
+    "typescript": "2.0.6"
+  },
+  "homepage": "https://github.com/jmdejno/ionic-audio#readme"
+}

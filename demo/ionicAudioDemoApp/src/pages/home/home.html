@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-card *ngFor="let track of myTracks">
+      <audio-track #audio [track]="track"></audio-track>
+    </ion-card>
+  </ion-list>
+</ion-content>

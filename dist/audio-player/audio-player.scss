@@ -1,0 +1,139 @@
+//Audio Tracks in List Styling
+audio-track {
+
+  ion-thumbnail {
+    > img {
+      top: 0;
+      position: absolute;
+      .md & {
+        @import "../../../node_modules/ionic-angular/components/item/item.md";
+        margin-top: ($item-md-padding-right / 2);
+      }
+
+      .ios & {
+        @import "../../../node_modules/ionic-angular/components/item/item.ios";
+        margin-top: ($item-ios-padding-right / 2);
+      }
+    }
+    audio-track-play {
+      position: absolute;
+      top: 0rem;
+      display: inline-flex;
+
+      .md & {
+        @import "../../../node_modules/ionic-angular/components/item/item.md";
+        min-width: $item-md-thumbnail-size;
+        min-height: $item-md-thumbnail-size;
+        margin: ($item-md-padding-right / 2) $item-md-padding-right ($item-md-padding-right / 2) 0;
+      }
+
+      .ios & {
+        @import "../../../node_modules/ionic-angular/components/item/item.ios";
+        min-width: $item-ios-thumbnail-size;
+        min-height: $item-ios-thumbnail-size;
+        margin: ($item-ios-padding-right / 2) $item-ios-padding-right ($item-ios-padding-right / 2) 0;
+      }
+
+      button {
+        width: 100% !important;
+        height: inherit !important;
+        margin: 0 !important;
+        }
+
+        ion-icon {
+          font-size: 2em !important;
+          color: map-get($colors, dark);
+          opacity: .6;
+        }
+      }
+    }
+}
+
+
+//Audio-Player styling
+audio-player {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  border-top: solid 2px;
+  border-top-color: map-get($colors, light);
+
+  .ios & {
+    bottom: $tabs-ios-tab-min-height - $content-ios-margin;
+  }
+
+  .md & {
+    bottom: $tabs-md-tab-min-height;
+  }
+
+  ion-thumbnail {
+      top: 0;
+      position: inherit;
+      .md & {
+        @import "../../../node_modules/ionic-angular/components/item/item.md";
+        min-height: ($item-md-thumbnail-size /2);
+        min-width: ($item-md-thumbnail-size /2);
+
+      }
+
+      .ios & {
+        @import "../../../node_modules/ionic-angular/components/item/item.ios";
+        min-height: ($item-ios-thumbnail-size / 2);
+        min-width: ($item-ios-thumbnail-size / 2);
+      }
+    }
+
+  audio-track-play {
+    position: absolute;
+    top: 0rem;
+    display: inline-flex;
+
+    .md & {
+      @import "../../../node_modules/ionic-angular/components/item/item.md";
+      min-width: ($item-md-thumbnail-size / 2);
+      min-height: ($item-md-thumbnail-size / 2);
+    }
+
+    .ios & {
+      @import "../../../node_modules/ionic-angular/components/item/item.ios";
+      min-width: ($item-ios-thumbnail-size / 2);
+      min-height: ($item-ios-thumbnail-size / 2);
+    }
+
+    button {
+      width: 100% !important;
+      height: inherit !important;
+      margin: 0 !important;
+    }
+
+    ion-icon {
+      font-size: 1.5em !important;
+      color: map-get($colors, dark);
+      opacity: .6;
+    }
+  }
+}
+
+
+//audio-track-progress-bar styling
+audio-track-progress-bar{
+  ion-range {
+    &.range-ios {
+      padding: 0;
+    }
+    &.range-md {
+      padding: 0;
+    }
+  }
+
+  time {
+    font-size: .8em;
+  }
+}
+
+//audio-track-progress
+audio-track-progress {
+  em {
+    font-size: .8em;
+  }
+}
