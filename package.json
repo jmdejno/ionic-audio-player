@@ -4,7 +4,7 @@
   "description": "Audio player using ionic and cordova plugins. Synchronous single track playing across app with singleton audio player. Audio track templates with progress bar, seeking, and timer. ",
   "main": "dist/audio-player/audio-player.module.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm install && cd ./demo/ionicAudioDemoApp && npm install && npm start"
   },
   "repository": {
     "type": "git",
